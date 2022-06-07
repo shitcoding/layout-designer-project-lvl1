@@ -20,7 +20,7 @@
                 <div>
                     <p>Вместе они формируют что-то вроде замкнутого цикла, и это может привести к длительной потере продуктивности, багам и бесконечному разочарованию.</p>
                     <p>Если мы сможем минимизировать воздействие одного или нескольких из этих факторов, то сможем сломать и цикл, а остатки нейтрализовать.</p>
-                    <a class="btn" href="#">Подробнее</a>
+                    <a class="btn" href="#navigation">Подробнее</a>
                 </div>
             </div>
         </div>
@@ -28,65 +28,73 @@
     <main>
         <!-- Beginning of Video section -->
         <section id="video-section">
-            <div class="container d-flex items-center flex-column">
+            <div class="container d-flex items-center flex-column row-gap-30">
                 <h2 class="text-center">Что же это такое,<br><span class="text-orange">когнитивные искажения?</span></h2>
                 <p>Что такое когнитивные искажения. Petrovna Channel</p>
-                <iframe class="video" width="919" height="569" src="https://www.youtube.com/embed/jie9AizBqss" frameborder="0" allowfullscreen></iframe>
+                <div class="shadow">
+                    <iframe class="video" width="919" height="569" src="https://www.youtube.com/embed/jie9AizBqss" frameborder="0" allowfullscreen></iframe>
+                </div>
             </div>
         </section>
         <!-- End of Video section -->
 
         <!-- Beginning of Navigation section -->
-        <nav>
-            <div class="container">
-                <div>5 когнитивных искажений  о существовании которых стоит помнить</div>
-                <div class="nav-card">
-                    <span class="number">1</span>
-                    <h3>Эффект ИКЕА</h3>
-                    <p>Вы переоцениваете собственные решения, и, как следствие, недооцениваете решения других.</p>
+        <nav id="navigation">
+            <div class="container d-flex flex-column row-gap-20">
+                <div class="d-flex col-gap-30">
+                    <div class="nav-header">
+                        <h2><span class="text-orange">5 когнитивных искажений<br></span>  о существовании которых стоит помнить</h2>
+                    </div>
+                    <a class="nav-card" href="#ikea-effect">
+                        <span class="number">1</span>
+                        <h3>Эффект ИКЕА</h3>
+                        <p>Вы переоцениваете собственные решения, и, как следствие, недооцениваете решения других.</p>
+                    </a>
+                    <a class="nav-card" href="#premature-optimization">
+                        <span class="number">2</span>
+                        <h3>Преждевременная оптимизация</h3>
+                        <p>Вы оптимизируете что-то задолго до того, как в этом появляется необходимость.</p>
+                    </a>
                 </div>
-                <div class="nav-card">
-                    <span class="number">2</span>
-                    <h3>Преждевременная оптимизация</h3>
-                    <p>Вы оптимизируете что-то задолго до того, как в этом появляется необходимость.</p>
-                </div>
-                <div class="nav-card">
+                <div class="d-flex col-gap-30">
+                <a class="nav-card" href="#novelty-distortion">
                     <span class="number">3</span>
                     <h3>Искажение новизны</h3>
                     <p>Вы даёте более высокую оценку тем событиям, которые произошли недавно, и недооцениваете более старые.</p>
-                </div>
-                <div class="nav-card">
+                </a>
+                <a class="nav-card" href="#hyperbolic-depreciation">
                     <span class="number">4</span>
                     <h3>Гиперболическое обесценивание</h3>
                     <p>Вы гонитесь за немедленной маленькой выгодой и игнорируете более крупную, недоступную сейчас, но доступную в будущем.</p>
-                </div>
-                <div class="nav-card">
+                </a>
+                <a class="nav-card" href="#planning-errors">
                     <span class="number">5</span>
                     <h3>Ошибка планирования</h3>
                     <p>Неправильно рассчитывать время необходимое для завершения задачи.</p>
+                </a>
                 </div>
             </div>
         </nav>
         <!-- End of Navigation section -->
 
         <!-- Beginning of Ikea Effect section -->
-        <section class="ikea-effect"></section>
+        <section id="ikea-effect"></section>
         <!-- End of Ikea Effect section -->
 
         <!-- Beginning of Premature Optimization section -->
-        <section class="premature-optimization"></section>
+        <section id="premature-optimization"></section>
         <!-- End of Premature Optimization section -->
 
         <!-- Beginning of Distortion of Novelty section -->
-        <section class="novelty-distortion"></section>
+        <section id="novelty-distortion"></section>
         <!-- End of Distortion of Novelty section -->
 
         <!-- Beginning of Hyperbolic Depreciation section -->
-        <section class="hyperbolic-depreciation"></section>
+        <section id="hyperbolic-depreciation"></section>
         <!-- End of Hyperbolic Depreciation section -->
 
         <!-- Beginning of Errors in Planning section -->
-        <section class="planning-errors"></section>
+        <section id="planning-errors"></section>
         <!-- End of Errors in Planning section -->
 
     </main>
