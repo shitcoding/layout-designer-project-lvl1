@@ -41,6 +41,10 @@ body {
   font: 16px/1.6em "Open Sans", sans-serif;
 }
 
+.container {
+  width: 1110px;
+}
+
 h1,
 h2,
 h3 {
@@ -61,6 +65,47 @@ h3 {
   font-size: 34px;
 }
 
+.section-image {
+  margin-right: 30px;
+
+  filter: drop-shadow(0 16px 32px rgb(0 0 0 / 15%));
+}
+
+section .tagline {
+  margin: 0;
+
+  color: var(--dark-transparent);
+
+  font: 400 24px Neucha, cursive;
+}
+
+section h2 {
+  margin: 0 0 30px;
+}
+
+section .description {
+  color: var(--dark);
+  font: 400 34px Neucha, cursive;
+}
+
+section h4 {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+
+  color: var(--white);
+
+  font: 700 14px "Open Sans", sans-serif;
+  text-transform: uppercase;
+
+  background: var(--brown);
+}
+
+section p {
+  margin: 0;
+  padding: 0;
+}
+
 header,
 nav,
 section {
@@ -74,6 +119,7 @@ section {
   padding: 100px 0;
 }
 
+/* Sections background styles */
 header::before,
 nav::before,
 section::before {
@@ -103,10 +149,7 @@ nav::before {
   opacity: 1;
 }
 
-.container {
-  width: 1110px;
-}
-
+/* Header styles */
 header h1 {
   margin: 0 0 185px;
 }
@@ -119,16 +162,6 @@ header img {
   height: 525px;
 
   overflow: hidden;
-}
-
-.col-2 {
-  display: flex;
-
-  column-gap: 30px;
-}
-
-.col-2 > * {
-  width: 50%;
 }
 
 .btn {
@@ -151,6 +184,7 @@ header img {
   background-color: var(--orange-dimmed);
 }
 
+/* Video Section styles */
 #video-section h2,
 #video-section p {
   margin: 0;
@@ -162,6 +196,7 @@ header img {
   filter: drop-shadow(0 16px 32px rgb(0 0 0 / 15%));
 }
 
+/* Navigation Section styles */
 #navigation {
   padding-top: 200px;
 }
@@ -173,27 +208,31 @@ header img {
 .nav-header h2 {
   margin: 0;
 
-  font-size: 52px;
   color: var(--white);
+
+  font-size: 52px;
 }
 
 .nav-card {
   flex: 1 1 350px;
   padding: 24px;
-  background-color: var(--white);
 
   text-decoration: none;
+
+  background-color: var(--white);
 }
 
 .nav-card > span {
   margin-bottom: 40px;
-  font: 64px/1 Neucha, cursive;
+
   color: var(--main-dark);
+  font: 64px/1 Neucha, cursive;
 }
 
 .nav-card > h3 {
-  color: var(--main);
   margin-bottom: 16px;
+
+  color: var(--main);
 }
 
 .nav-card > p {
@@ -222,6 +261,16 @@ header img {
   display: flex;
 }
 
+.col-2 {
+  display: flex;
+
+  column-gap: 30px;
+}
+
+.col-2 > * {
+  width: 50%;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -240,6 +289,10 @@ header img {
 
 .row-gap-20 {
   row-gap: 20px;
+}
+
+.row-gap-30 {
+  row-gap: 30px;
 }
 
 .col-gap-30 {
