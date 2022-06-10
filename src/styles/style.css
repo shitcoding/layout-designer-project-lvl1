@@ -67,7 +67,8 @@ h3 {
 
 header,
 nav,
-section {
+section,
+footer {
   position: relative;
 
   display: flex;
@@ -183,22 +184,47 @@ header img {
 
 .btn {
   display: block;
+  border: none;
 
-  width: max-content;
-
-  margin-top: 40px;
   padding: 12px 24px;
 
   color: var(--white);
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: none;
-
   background-color: var(--main);
 }
 
 .btn:hover {
   background-color: var(--orange-dimmed);
+}
+
+.btn-header {
+  width: max-content;
+
+  margin-top: 40px;
+
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn-feedback {
+  position: relative;
+
+  width: 70px;
+  height: 50px;
+}
+
+.btn-feedback::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: url("../assets/images/send.svg") center no-repeat;
+  transform: translateY(-50%);
+
+  content: "";
 }
 
 /* Video Section styles */
@@ -274,15 +300,13 @@ header img {
   width: 100%;
   height: 190px;
 
-  margin-top: 100px;
-
   background-color: var(--main-dark);
 }
 
-.feedback h3 {
-  margin: 55px;
+.feedback form {
+  width: 100%;
 
-  color: var(--white);
+  margin-right: 55px;
 }
 
 .feedback form label {
@@ -292,6 +316,9 @@ header img {
 
 .feedback form input {
   display: block;
+  box-sizing: border-box;
+
+  width: 100%;
   height: 50px;
 
   padding: 15px;
@@ -300,13 +327,27 @@ header img {
   border: none;
 }
 
-.feedback form span {
+.feedback form .terms,
+.feedback form .terms a {
   color: var(--white);
   font-size: 12px;
 }
 
 .contacts {
+  margin-top: 60px;
+
+  text-align: center;
   font-size: 14px;
+  color: #000000;
+}
+
+.contacts a {
+  color: #1085C5;
+}
+
+
+.text-white {
+  color: var(--white);
 }
 
 .text-orange {
@@ -335,6 +376,10 @@ header img {
   justify-content: center;
 }
 
+.space-between {
+  justify-content: space-between;
+}
+
 .items-center {
   align-items: center;
 }
@@ -357,4 +402,16 @@ header img {
 
 .col-gap-30 {
   column-gap: 30px;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.m-55px {
+  margin: 55px;
+}
+
+.w-100 {
+  width: 100%;
 }

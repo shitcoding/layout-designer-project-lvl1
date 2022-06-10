@@ -20,7 +20,7 @@
                 <div>
                     <p>Вместе они формируют что-то вроде замкнутого цикла, и это может привести к длительной потере продуктивности, багам и бесконечному разочарованию.</p>
                     <p>Если мы сможем минимизировать воздействие одного или нескольких из этих факторов, то сможем сломать и цикл, а остатки нейтрализовать.</p>
-                    <a class="btn" href="#navigation">Подробнее</a>
+                    <a class="btn btn-header" href="#navigation">Подробнее</a>
                 </div>
             </div>
         </div>
@@ -212,24 +212,26 @@
     <footer>
         <div class="container d-flex flex-column items-center">
             <div class="feedback">
-                <div class="col-2">
-                    <div class="d-flex items-center">
-                        <h3>Хотите узнать больше?<br>Подпишитесь на обновления</h3>
+                <div class="col-2 space-between items-center m-55px">
+                    <div>
+                        <h3 class="text-white m-0">Хотите узнать больше?<br>Подпишитесь на обновления</h3>
                     </div>
-                    <div class="d-flex items-center">
+                    <div>
                         <form action="">
                             <label for="email">Электронная почта</label>
-                            <input id="email" name="email" type="email" required>
-                            <button type="submit">Отправить</button>
+                            <div class="d-flex">
+                                <input id="email" name="email" type="email" placeholder=" Ваша электронная почта" required>
+                                <button class="btn btn-feedback" type="submit"></button>
+                            </div>
                             <span class="terms">Подписываясь, вы принимаете <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">правила сервиса</a></span>
                         </form>
                     </div>
                 </div>
             </div>
             <div class="contacts">
-                <span>© 2022 Валдис Пельш</span>
-                <span>По материалам статьи <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Yash Ranadive Cognitive Biases in Programming</a></span>
-                <span><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Курсы программирования Hexlet</a></span>
+                <p>© 2022 Валдис Пельш</p>
+                <p>По материалам статьи <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Yash Ranadive Cognitive Biases in Programming</a></p>
+                <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Курсы программирования Hexlet</a></p>
             </div>
         </div>
     </footer>
